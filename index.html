@@ -5,36 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header__container container">
         <nav>
-            <div class="container">
                 <div class="nav__logo">
-                    <a href="#" onclick="windows.reload();"><img src="sign-transparent.png" alt="" width="100"></a>
-                    <div class="menu">
-                        <div></div>
-                        <div></div>
-                    </div>
+                    <a href="#" onclick="windows.reload();"><img src="/images/sign-transparent.png" alt="Logo" width="100"></a>
+                    <i class="far fa-bars nav__menu"></i>
                 </div>
                 <div class="nav__links">
                     <a href="#" class="nav__link">About</a>
                     <a href="#" class="nav__link">Projects</a>
                     <a href="#" class="nav__link">Skills</a>
-                    <a href="#" class="nav__link">
-                        <button class="nav__contact-me">Contact</button>
-                    </a>
+                    <a href="#" class="nav__link">Contact</a>
+                    <a href="#" class="nav__link nav__contact-me btn">Resume</a>
                 </div>
-            </div>
         </nav>
-        <div class="header__hero">
-            <div class="header__column">
-                <div class="header__title"><h2>Hi! I'm Muakshov Bakdaulet</h2></div>
-                <div class="header__text"><p>A junior web developer</p></div>
+        <div class="hero">
+            <div class="hero__column">
+                <h3 class="hero__intro">Hi! My name is</h3>
+                <h1 class="hero__name"><span>Mukashov</span> Bakdaulet</h1>
+                <h2 class="hero__text">Junior Frontend developer</h2>
             </div>
-            <div class="header__column"></div>
+        </div>
+        <div role="img"class="hero__illustration">DEV</div>
+        <div class="hero__contacts">
+            <a class="hero__contact_email" href="mailto:bakdaulet.mukashov@gmail.com"><i class="fal fa-envelope"></i>   bakdaulet.mukashov@gmail.com</a>
+            <a class="hero__contact_tel" href="tel:+77768512002"><i class="fal fa-phone-alt">  +77768512002</i></a>
         </div>
     </header>
+
+    <section class="about__container container">
+        <div class="about__title">
+            <h2 class="about__title_text">ABOUT</h2>
+            <hr class="about__title_line">
+        </div>
+        
+    </section>
 </body>
 </html>
