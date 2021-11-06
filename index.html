@@ -108,13 +108,15 @@
         </div>
         <div class="contact__content section__content">
             <form id="contact__form" target="_blank" action="https://formspree.io/f/mleayabv" method="POST">
-            <label for="email" >Your email:</label>
-            <input type="email" id="email" name="_replyto">
-            <label for="message" >Your message:</label>
-            <textarea id="message"name="message"></textarea>
-            <!-- your other form fields go here -->
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="example@mail.com" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Say Hi!" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <input type="submit" value="Submit">
         </form>
-        <button type="submit" form="contact__form">Send</button>
         </div>
     </section>
 
