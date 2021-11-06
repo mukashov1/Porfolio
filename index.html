@@ -107,9 +107,7 @@
             <hr class="contact__title_line  section__title_line">
         </div>
         <div class="contact__content section__content">
-            <form
-            action="https://formspree.io/f/mleayabv"
-            method="POST">
+            <form id="contact__form" target="_blank" action="https://formspree.io/f/mleayabv" method="POST">
             <label>
               Your email:
               <input type="email" name="_replyto">
@@ -120,8 +118,8 @@
             </label>
             <input type="hidden" name="_next" value="https://formspree.io/thanks?language=ru" />
             <!-- your other form fields go here -->
-            <button type="submit">Send</button>
-          </form>
+        </form>
+        <button type="submit" form="contact__form">Send</button>
         </div>
     </section>
 
