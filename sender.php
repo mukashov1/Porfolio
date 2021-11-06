@@ -13,11 +13,9 @@
 
 	
 	$msg="
-    Имя: $name /n
-    // Фамилия: $surname /n
-    // Телефон: $phone /n
-    // Почта: $email /n
-    // Текст: $text"; 	
+    Имя: $name"; 	
 	mail($to, $subject, $msg, "From: $from ");
 
 ?>
+
+<p>Привет, форма отправлена</p>
