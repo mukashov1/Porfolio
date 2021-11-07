@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 .btn {
@@ -146,7 +146,7 @@ nav > div {
     content: '';
     position: absolute;
     top: 90px;
-    left: -0;
+    left: 0;
     width: 4.8em;
     height: 5px;
     background: var(--main-color);
@@ -208,7 +208,6 @@ nav > div {
 }
 
 .skills__skill {
-    max-width: 100%;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -232,23 +231,23 @@ nav > div {
     content: attr(data-label);
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 1vw;
     width: 50px;
 }
 
-progress::-webkit-progress-bar {
+.skills__progress::-webkit-progress-bar {
     background-color: white;
     border-radius: 10px;
     color: white;
 }
 
-progress::-moz-progress-bar {
+.skills__progress::-moz-progress-bar {
     background-color: white;
     border-radius: 10px;
     color: white;
 }
 
-progress[value]::-webkit-progress-value {
+.skills__progress[value]::-webkit-progress-value {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: var(--main-color);
@@ -258,14 +257,24 @@ progress[value]::-webkit-progress-value {
 
 /*   <--- Projects --->    */
 
+.projects__content {
+    flex-direction: column;    
+}
+
+.projects__project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
 
 .projects__image {
-    width: 50%;
+    width: 60%;
     height: 100%;   
 }
 
 .projects__image-img {
-    object-fit: scale-down;
     border-radius: 5px;
     border: 2px solid var(--main-color);
     width: 100%;
@@ -288,20 +297,22 @@ progress[value]::-webkit-progress-value {
     padding: 5px 10px;
 }
 
+.projects__links {
+    display: flex;
+    gap: 20px;
+}
+
 .projects__link {
     position: relative;
-    top: 0;
     color: var(--p-color);
     display: inline;
     font-size: 1.2em;
     font-weight: 200;
-    margin-right: 15px;
     transition: all .2s linear;
 }
 
 .projects__link:hover {
     top: -4px;
-    margin-bottom: 10px;
     color: var(--main-color);
 }
 
@@ -324,21 +335,17 @@ progress[value]::-webkit-progress-value {
       align-items: stretch;
   }
 
-  label {
-      display: block;
-  }
-
   form input , textarea {
       border: 1px solid var(--main-color);
       border-radius: 5px;
       padding: 10px 15px;
-      width: 100%;
+      width: 90%;
       height: 10%;
       margin-bottom: 40px;
   }
 
   textarea {
-      height: 60%;
+      height: 59%;
   }
 
   .contact__form-info {
@@ -364,12 +371,13 @@ progress[value]::-webkit-progress-value {
   }
 
   .contact__link {
-}
+    width: 100%;
+  }
 
-.contact__link *{
+ .contact__link *{
     color: var(--p-color);
     position: relative;
-    transition: all 0.2s linear;
+    transition: all 1s linear;
   }
 
   .contact__link *:hover {
@@ -391,4 +399,149 @@ progress[value]::-webkit-progress-value {
     color: white;
     background-position-x: 98.8%;
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+.EL {
+    writing-mode: vertical-lr;
+    position: absolute;
+    opacity: .5;
+    top: 950px;
+    left: -85px;
+    font-size: 18rem;
+    display: inline-block;
+    color: var(--main-color);
+}
+
+.OP {
+    width: 290px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    opacity: .5;
+    top: 1350px;
+    right: 0px;
+    font-size: 18rem;
+    overflow: hidden;
+    display: inline-block;
+    color: var(--main-color);
+    z-index: 9999;
+}
+
+.ER {
+    writing-mode: vertical-lr;
+    position: absolute;
+    opacity: .5;
+    top: 1750px;
+    left: -80px;
+    font-size: 18rem;
+    display: inline-block;
+    color: var(--main-color);
+    z-index: 9999;
+}
+
+
+/* <--- media ---> */
+
+
+@media screen and (max-width: 1180px) {
+    
+    .about__content {
+        flex-direction: column-reverse;
+    }
+
+    .about__avatar {
+        width: 60%;
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .projects__project {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .projects__image {
+        order: 1;
+        width: 90%;
+    }
+
+    .projects__info {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects__links {
+        justify-content: center;
+        gap: 25px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav__links {
+        display: none;
+    }
+
+    .nav__menu {
+        display: block;
+    }
+
+    .nav__logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hero__contacts {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #contact__form {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #contact__form > div {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .section__title {
+        justify-content: center;
+    }
+
+    .section__title_line {
+        display: none;
+    }
+
+    .section__content {
+        margin: auto ;
+    }
+
+    .hero__name {
+        font-size: 3em;
+    }
+
+    .hero__name span::after {
+        top: 55px;
+    }
+
+    .hero__text {
+        font-size: 2em;
+    }
+
+    .about__avatar {
+        width: 80%;
+    }
+
+
+
 }

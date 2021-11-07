@@ -13,7 +13,7 @@
         <nav>
                 <div class="nav__logo">
                     <a href="" onclick="window.location.reload()" ><img src="images/sign-transparent.png" alt="Logo" width="100"></a>
-                    <i class="far fa-bars nav__menu"></i>
+                    <i onclick="menu()" class="far fa-bars nav__menu"></i>
                 </div>
                 <div class="nav__links">
                     <a href="#" class="nav__link">About</a>
@@ -33,7 +33,7 @@
         <div role="img"class="hero__illustration">DEV</div>
         <div class="hero__contacts">
             <a class="hero__contact_email" href="mailto:bakdaulet.mukashov@gmail.com"><i class="fal fa-envelope"></i>   bakdaulet.mukashov@gmail.com</a>
-            <a class="hero__contact_tel" href="tel:+77768512002"><i class="fal fa-phone-alt">  +77768512002</i></a>
+            <a class="hero__contact_tel" href="tel:+77768512002"><i class="fal fa-phone-alt"></i>  +77768512002</a>
         </div>
     </header>
 
@@ -48,7 +48,6 @@
                 <p>I enjoy coding and experimenting with them. I build high-quality applications for the web. I concentrate on writing clean and understandable code. Currently, I'm pursuing my undergrads 👨‍🎓 in Computer Science Engineering at <a class="about__university" href="#">Suleyman Demirel University</a>, Almaty. I love to work in a team.  </p>
                 <p> When I'm not pushing pixels, you'll find me playing video games, experimenting with code or working out in the park.</p>     
             </div>
-            <img src="images/Avatar.jpg" alt="Avatar" class="about__avatar">
         </div>
     </section>
 
@@ -83,20 +82,39 @@
             <hr class="projects__title_line section__title_line">
         </div>
         <div class="projects__content section__content">
-            <a href="https://mukashov1.github.io/Remix-Codewell/" class="projects__image">
-                <img src="images/Remix.jpg" alt="Project 1 image" class="projects__image-img">
-            </a>
-            <div class="projects__info">
-                <h3 class="projects__name">REMIX</h3>
-                <p class="projects__text">Remix is a Figma and Sketch plugin that was made with Developers in mind. Website contain switching mode , form.</p>
-                <div class="projects__languages">
-                    <span class="projects__language">HTML</span>
-                    <span class="projects__language">CSS</span>
+            <div class="projects__project">
+                <a href="https://mukashov1.github.io/Remix-Codewell/" class="projects__image">
+                    <img src="images/Remix.jpg" alt="Project 1 image" class="projects__image-img">
+                </a>
+                <div class="projects__info">
+                    <h3 class="projects__name">REMIX</h3>
+                    <p class="projects__text">Remix is a Figma and Sketch plugin that was made with Developers in mind. Website contain switching mode , form.</p>
+                    <div class="projects__languages">
+                        <span class="projects__language">HTML</span>
+                        <span class="projects__language">CSS</span>
+                    </div>
+                    <div class="projects__links">
+                        <a href="#" class="projects__link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="projects__link"><i class="fa fa-external-link"></i></a>
+                    </div>
                 </div>
-                <div class="projects__links">
-                    <a href="#" class="projects__link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="projects__link"><i class="fa fa-external-link"></i></a>
+            </div>
+            <div class="projects__project">
+                <div class="projects__info">
+                    <h3 class="projects__name">REMIX</h3>
+                    <p class="projects__text">Remix is a Figma and Sketch plugin that was made with Developers in mind. Website contain switching mode , form.</p>
+                    <div class="projects__languages">
+                        <span class="projects__language">HTML</span>
+                        <span class="projects__language">CSS</span>
+                    </div>
+                    <div class="projects__links">
+                        <a href="#" class="projects__link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="projects__link"><i class="fa fa-external-link"></i></a>
+                    </div>
                 </div>
+                <a href="https://mukashov1.github.io/Remix-Codewell/" class="projects__image">
+                    <img src="images/Remix.jpg" alt="Project 1 image" class="projects__image-img">
+                </a>
             </div>
         </div>
     </section>
@@ -116,7 +134,7 @@
                 </div>
                 <div class="contact__form-message">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Say Hi!" required></textarea>
+                    <textarea name="message" rows="8" id="message" placeholder="Say Hi!" required></textarea>
                 </div>
             </form>
             <div class="contact__links">
