@@ -12,8 +12,8 @@
     <header class="header__container container">
         <nav>
                 <div class="nav__logo">
-                    <a href="" onclick="window.location.reload()" ><img src="images/sign-transparent.png" alt="Logo" width="100"></a>
-                    <i onclick="menu()" class="far fa-bars nav__menu"></i>
+                    <a onclick="window.location.reload()" ><img src="images/sign-transparent.png" alt="Logo" width="100"></a>
+                    <a onclick="menu()" class="nav__menu"><i class="far fa-bars"></i></a>
                 </div>
                 <div class="nav__links">
                     <a href="#" class="nav__link">About</a>
@@ -149,6 +149,19 @@
             </div>
         </div>
     </section>
+
+    <script>
+        IsOpen = false;
+        function menu() {
+            if (!IsOpen) {
+                document.querySelector('.nav__links').style.display = 'flex';
+                IsOpen = true;
+            } else {
+                document.querySelector('.nav__links').style.display = 'none';
+                IsOpen = false;
+            }
+        }
+    </script>
 
 </body>
 </html>

@@ -482,8 +482,17 @@ nav > div {
 
 @media screen and (max-width: 768px) {
 
+    nav {
+        flex-direction: column;
+    }
+
     .nav__links {
         display: none;
+        width: 150%;
+        flex-direction: column;
+        background: white;
+        z-index: 2;
+        padding-bottom: 20px;
     }
 
     .nav__menu {
