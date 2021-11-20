@@ -16,10 +16,10 @@
                     <a onclick="menu()" class="nav__menu"><i class="far fa-bars"></i></a>
                 </div>
                 <div class="nav__links">
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Projects</a>
-                    <a href="#" class="nav__link">Skills</a>
-                    <a href="#" class="nav__link">Contact</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#projects" class="nav__link">Projects</a>
+                    <a href="#skills" class="nav__link">Skills</a>
+                    <a href="#contact" class="nav__link">Contact</a>
                     <a href="#" class="nav__link nav__contact-me btn">Resume</a>
                 </div>
         </nav>
@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    <section class="about__container container">
+    <section class="about__container container" id="about">
         <div class="about__title section__title">
             <h2 class="about__title_text">ABOUT</h2>
             <hr class="about__title_line section__title_line">
@@ -45,14 +45,14 @@
         <div class="about__content section__content">
             <div class="about__text">
                 <p>Salem! I'm Baha , dreamer who wants to become a web development shark, from Qyzylorda, Kazakhstan </p>
-                <p>I enjoy coding and experimenting with them. I build high-quality applications for the web. I concentrate on writing clean and understandable code. Currently, I'm pursuing my undergrads 👨‍🎓 in Computer Science Engineering at <a class="about__university" href="#">Suleyman Demirel University</a>, Almaty. I love to work in a team.  </p>
+                <p>I enjoy coding and experimenting with them. I build high-quality applications for the web. I concentrate on writing clean and understandable code. Currently, I'm pursuing my undergrads 👨‍🎓 in Computer Science Engineering at <a class="about__university" href="https://sdu.edu.kz/">Suleyman Demirel University</a>, Almaty. I love to work in a team.  </p>
                 <p> When I'm not pushing pixels, you'll find me playing video games, experimenting with code or working out in the park.</p>     
             </div>
             <img src="images/Avatar.jpg" alt="Avatar" class="about__avatar">
         </div>
     </section>
 
-    <section class="skills__container container">
+    <section class="skills__container container" id="skills">
         <div class="skills__title section__title">
             <h2 class="skills__title_text">SKILLS</h2>
             <hr class="skills__title_line  section__title_line">
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <section class="projects__container container">
+    <section class="projects__container container" id="projects">
         <div class="projects__title section__title">
             <h2 class="projects__title_text">PROJECTS</h2>
             <hr class="projects__title_line section__title_line">
@@ -95,8 +95,8 @@
                         <span class="projects__language">CSS</span>
                     </div>
                     <div class="projects__links">
-                        <a href="#" class="projects__link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="projects__link"><i class="fa fa-external-link"></i></a>
+                        <a href="https://github.com/mukashov1" class="projects__link"><i class="fab fa-github"></i></a>
+                        <a href="https://mukashov1.github.io/Remix-Codewell/" class="projects__link"><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -109,8 +109,8 @@
                         <span class="projects__language">CSS</span>
                     </div>
                     <div class="projects__links">
-                        <a href="#" class="projects__link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="projects__link"><i class="fa fa-external-link"></i></a>
+                        <a href="https://github.com/mukashov1" class="projects__link"><i class="fab fa-github"></i></a>
+                        <a href="https://mukashov1.github.io/Remix-Codewell/" class="projects__link"><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
                 <a href="https://mukashov1.github.io/Remix-Codewell/" class="projects__image">
@@ -120,13 +120,13 @@
         </div>
     </section>
 
-    <section class="contact__container container">
+    <section class="contact__container container" id="contact">
         <div class="contact__title section__title">
             <h2 class="contact__title_text">CONTACT</h2>
             <hr class="contact__title_line  section__title_line">
         </div>
         <div class="contact__content section__content">
-            <form id="contact__form" target="_blank" action="https://formspree.io/f/mleayabv" method="POST">
+            <form id="contact__form" action="https://formspree.io/f/mleayabv" method="POST">
                 <div class="contact__form-info">
                     <label for="full-name">Full Name</label>
                     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
