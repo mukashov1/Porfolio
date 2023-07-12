@@ -95,6 +95,7 @@ nav > div {
 }
 
 .nav__menu {
+    font-size: 35px;
     display: none;
 }
 
